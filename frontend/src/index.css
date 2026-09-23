@@ -395,3 +395,129 @@ button:focus-visible {
     flex-direction: column;
   }
 }
+
+.page-container {
+  padding: 32px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin-bottom: 8px;
+}
+
+.upload-card,
+.resume-card {
+  background: #151922;
+  border: 1px solid #252b38;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.upload-card input {
+  display: block;
+  margin: 20px 0;
+}
+
+.upload-card button,
+.resume-card button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.resume-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-message {
+  margin-top: 16px;
+}
+
+@media (max-width: 700px) {
+  .page-container {
+    padding: 20px;
+  }
+
+  .resume-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+.job-search-form {
+  display: grid;
+  grid-template-columns:
+    2fr
+    1.5fr
+    1fr
+    1fr
+    auto;
+
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.job-search-form input,
+.job-search-form select {
+  background: #151922;
+  border: 1px solid #2a3040;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.job-result {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.job-tags,
+.job-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.job-tags span,
+.job-skills span {
+  background: #202634;
+  border-radius: 6px;
+  padding: 5px 9px;
+  font-size: 12px;
+}
+
+.job-description {
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.job-actions {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .job-search-form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .job-search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .job-result {
+    flex-direction: column;
+  }
+}

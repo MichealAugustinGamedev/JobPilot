@@ -3,10 +3,14 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
+import resumeRoutes from "./routes/resumeRoutes.js";
+import jobRoutes from "./routes/jobRoutes.js";
 
 import { connectDatabase } from "./config/database.js";
-
 const app = express();
+app.use("/api/resumes", resumeRoutes);
+app.use("/api/jobs", jobRoutes);
+
 
 const PORT = process.env.PORT || 5000;
 const FRONTEND_URL =
@@ -33,6 +37,8 @@ app.get("/api/health", (req, res) => {
     timestamp: new Date().toISOString(),
   });
 });
+
+app.use("/api/resumes", resumeRoutes);
 
 // Start server after database connection
 async function startServer() {
