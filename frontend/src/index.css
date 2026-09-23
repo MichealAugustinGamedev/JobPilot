@@ -521,3 +521,151 @@ button:focus-visible {
     flex-direction: column;
   }
 }
+
+
+.resume-selector {
+  width: 100%;
+  max-width: 500px;
+  background: #151922;
+  color: #ffffff;
+  border: 1px solid #2a3040;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+.error-card {
+  border-color: #7f1d1d;
+}
+
+.ai-analysis {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #2a3040;
+  border-radius: 12px;
+  background: #10141c;
+}
+
+.ai-analysis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.ai-analysis-header strong {
+  font-size: 28px;
+}
+
+.ai-note {
+  font-size: 13px;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.analysis-section {
+  margin-top: 20px;
+}
+
+.analysis-section h5 {
+  margin-bottom: 10px;
+}
+
+.analysis-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.analysis-tags span {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #202634;
+  font-size: 13px;
+}
+
+.analysis-section ul {
+  padding-left: 20px;
+}
+
+.analysis-section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.job-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 140px;
+}
+
+@media (max-width: 700px) {
+  .job-actions {
+    width: 100%;
+  }
+
+  .job-actions button,
+  .job-actions a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ai-analysis-header {
+    align-items: flex-start;
+  }
+}
+
+/* ATS analysis */
+
+.ats-analysis {
+  margin-top: 24px;
+}
+
+.ats-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #202634;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.suggestion-box {
+  padding: 14px;
+  border: 1px solid #2a3040;
+  border-radius: 8px;
+  background: #151922;
+}
+
+.suggestion-box p {
+  margin: 8px 0 0;
+  line-height: 1.6;
+}
+
+.bullet-suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bullet-suggestions strong {
+  font-size: 13px;
+}
+
+.job-actions .secondary-button {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .job-actions {
+    width: 100%;
+  }
+
+  .job-actions button,
+  .job-actions a {
+    width: 100%;
+    text-align: center;
+  }
+}
